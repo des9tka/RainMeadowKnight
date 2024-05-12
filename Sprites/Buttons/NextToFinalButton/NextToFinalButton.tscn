@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://7gvgedyfifny"]
+
+[ext_resource type="Script" path="res://Sprites/Buttons/NextToFinalButton/NextToFinalButton.gd" id="1_f7635"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fsbko"]
+
+[node name="Button" type="Button"]
+offset_right = 8.0
+offset_bottom = 8.0
+theme_override_font_sizes/font_size = 4
+theme_override_styles/normal = SubResource("StyleBoxEmpty_fsbko")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_fsbko")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_fsbko")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_fsbko")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_fsbko")
+text = "➜"
+script = ExtResource("1_f7635")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

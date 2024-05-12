@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://om6r5u751or0"]
+
+[ext_resource type="Script" path="res://Sprites/Teleports/ForwardTeleports/TeleportTo3LvL/TeleportTo3LvL.gd" id="1_o6pgu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6tkrd"]
+size = Vector2(9, 13)
+
+[node name="Teleport3" type="Node2D"]
+script = ExtResource("1_o6pgu")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0.5, 10.5)
+shape = SubResource("RectangleShape2D_6tkrd")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

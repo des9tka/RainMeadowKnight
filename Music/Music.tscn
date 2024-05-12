@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://cboj5afr0jkr1"]
+
+[ext_resource type="AudioStream" uid="uid://crl4rmab1vljv" path="res://Assets/music/X2Download.app - 【piano】song of storms II (128 kbps).mp3" id="1_8qe7k"]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D"]
+stream = ExtResource("1_8qe7k")
+volume_db = -7.949
+autoplay = true
+bus = &"Music"

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://crl4rmab1vljv"
+path="res://.godot/imported/X2Download.app - 【piano】song of storms II (128 kbps).mp3-0944d2f35992545edc6d44661f1b7347.mp3str"
+
+[deps]
+
+source_file="res://Assets/music/X2Download.app - 【piano】song of storms II (128 kbps).mp3"
+dest_files=["res://.godot/imported/X2Download.app - 【piano】song of storms II (128 kbps).mp3-0944d2f35992545edc6d44661f1b7347.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

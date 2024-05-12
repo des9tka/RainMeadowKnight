@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://cpoebnki2gv5"]
+
+[ext_resource type="Texture2D" uid="uid://b6ygyc6rvxknl" path="res://Assets/sprites/TutoringBackground.png" id="1_mgmyl"]
+
+[node name="TutoringBackground" type="Node2D"]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+z_index = -1
+texture_filter = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+z_index = 1
+position = Vector2(0, -257)
+scale = Vector2(0.4, 0.407937)
+texture = ExtResource("1_mgmyl")
+centered = false

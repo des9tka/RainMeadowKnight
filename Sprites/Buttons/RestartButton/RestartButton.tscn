@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://dp8wrcued8oot"]
+
+[ext_resource type="Script" path="res://Sprites/Buttons/RestartButton/RestartButton.gd" id="1_pgogw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_m4h7v"]
+
+[node name="Button" type="Button"]
+offset_right = 8.0
+offset_bottom = 8.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_m4h7v")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_m4h7v")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_m4h7v")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_m4h7v")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_m4h7v")
+text = "🔄"
+script = ExtResource("1_pgogw")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]
